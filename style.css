@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --bg-color:#ffffff;
+    --font-color:#0d0c22;
+    --white-color:#ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ 
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    
+  }
+  /* ....................... Home Section ..........................  */
+
+  .Home-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0rem 2rem;
+    padding-top: 5rem;
+
+    >h4{
+      text-align: center;
+      font-size: 16px;
+      line-height: 16px;
+      color: var(--font-color);
+      background-color:#e3b6ef;
+      padding: 0.8rem 2rem;
+      font-family:"Source Serif 4", Georgia, serif ;
+      font-weight: bold;
+      animation-name: hero;
+      animation-iteration-count: infinite;
+      animation-duration: 3s;
+      transition: all;
+    }
+    
+
+    >h1{
+      width: 870px;
+      font-size:82px;
+      line-height: 76px;
+      text-align: center;
+      font-family:  'Playfair Display', serif;
+      padding: 2rem 0 ;
+    }
+    >p{
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+    >.home-btn{
+      color: var(--white-color);
+      background-color: var(--font-color);
+      padding: 0.9rem 1.2rem ;
+      margin-top: 2rem;
+    }
+  }
+  @keyframes hero {
+    0%   {background-color:#e3b6ef; }
+    25%  {background-color:#ffabe7; }
+    50%  {background-color:#d2bcf3; }
+    75%  {background-color:#edf3d8; }
+    100% {background-color:#ffda79; }
+    
+  }
+
+/*................................ Slider CSS ............................... */
+.hero-slider {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  > .slider-container {
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: all ease 0.20s;
+    transition: all linear 0.5;
+    display: inline-block;
+    width: 100%;
+    >.img-1{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=546x680&vertical=center);
+
+     
+    }
+    >.img-2{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-3{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-4{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-5{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47172/original/d85ae8c7db2421e9a01ecac942978d4b.png?1685645079&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-6{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47173/original/Vladimir_Gruev.png?1689174896&format=webp&resize=320x399&vertical=center);
+    }
+    >.img-7{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47174/original/4f02d72fe701b15b2168a4954332427f.png?1685645150&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-8{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47176/original/9b22cd83bde1809976bec0722d1f8923.jpeg?1685645213&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-9{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47171/original/daniele-buffa-3.png?1689174763&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-10{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png?1685644840&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-11{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47175/original/1fb34610061a95a007ac5e7b1dc53138.jpeg?1685645183&format=webp&resize=546x680&vertical=center);
+    }
+    >.img-12{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?1685645250&format=webp&resize=546x680&vertical=center);
+    }
+
+    > .imgs {
+      width: 273px;
+      height: 340px;
+      display: inline-block;
+      margin: 0.5rem;
+
+      >h3{
+        color: var(--bg-color);
+        padding-top: 14.5rem;
+        padding-left: 2rem;
+        font-size: 16px ;
+      }
+      >h4{
+        color: var(--bg-color);
+        padding-left: 2rem;
+        font-size: 16px ;
+
+      }
+      >.hero-btn1{
+        margin-left: 2rem;
+        font-size: 16px ;
+
+          >.hero-btn{
+            padding: 0.2rem 0.6rem;
+            border: 1px solid var(--white-color);
+            color: var(--bg-color);
+            background-color: transparent;
+            opacity: 3;
+          }
+      }
+    }
+  }
+  /* > .slider-container:nth-child(2) {
+    margin-left: 28%;
+  } */
+ }
+ 
+@keyframes slider {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} 
+/* <!-- ==========================================================================  --> */
+
+
+/* <!-- ------------------------Explore inspiring designs Section ----------------------------------------- --> */
+.headin-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px ;
+    color: #0d0c22;
+    padding: 2rem 2rem ;
+}
+.container {
+  position: relative;
+  width: 70%;
+  max-width: 350px; 
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background-image: linear-gradient(transparent ,black);
+  color: #f1f1f1; 
+  width: 95%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 15px;
+  padding:0.9rem ;
+  border-radius: 20px;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.overlay-btn1{
+  padding: 0.5rem 0.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  margin-left: 0.7rem;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  
+
+} 
+.overlay-bottom{
+  position: absolute;
+  padding-top: 2rem;
+
+
+}
+.user-name{
+     color:var(--font-color);
+  >button{
+    color: #3d3d4e;
+     
+  }
+  >i{
+    color: #211f1f;
+    font-weight: bold;
+    padding-right: 0.5rem;
+    font-size: 20px;
+    
+  }
+}
+
+.pro-btn{
+  border: none;
+  padding: 0.2rem 0.5rem;
+  background-color: #cccccc;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+.like2{
+  margin-left: 0.5rem;
+  border: none;
+  font-size: 13x;
+  /* font-weight: bold; */
+  color: #0d0c22;
+  background-color: transparent;
+  >i{
+    font-size: 14px ;
+    
+  }
+}
+.like2 i:hover {
+  color: #ea64d9;
+  overflow: hidden;
+}
+
+.save2{
+  margin-left: 0.6rem;
+  border: none;
+  font-size: 13px;
+  /* font-weight: bold; */
+  color: #0d0c22;
+  background-color: transparent;
+  >i{
+    font-size: 14px ;
+  }
+}
+
+.browser-buttom-div{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browser-btn{
+  padding: 1rem 1.5rem ;
+  border-radius: 55px;
+  margin: 6rem 0rem ;
+
+}
+.browser-btn:hover{
+  color: #696d7a;
+}
+
+/* <!-- ..........................................  Section 3 ........................  --> */
+
+.section3{
+  background-color: #ffda79;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh ;
+  width: 100vw;
+  /* line-height: 70px; */
+  >.div1{
+    >h2{
+      margin: 0rem 34rem;
+      font-size: 64px;
+      font-family: "Source Serif 4", Georgia, serif;
+    }
+    >p{
+      margin: 0rem 30rem;
+      
+      font-size: 20px ;
+      font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+
+ 
+}
+.section3-btn{
+  padding: 0.8rem 1.5rem;
+  font-size: 16px;
+  border-radius: 55px;
+  
+}
+.section3-btn2 .btn1:hover {
+background-color: #d6d6ed;
+}
+.section3-btn2 .btn2:hover {
+  color: #6e6e6f;
+  }
+.span{
+  border-bottom: 2px solid black;
+
+}
+
+
+
+/* ................................ Section 4 Gallery .......................  */
+
+.Gallery-slider{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  >.Gallery-container{
+    animation-name: slider;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: all ease 0.20s;
+    transition: all linear 0.5;
+    display: inline-block;
+    width: 100%;
+    > .img {
+      width: 273px;
+      height: 340px;
+      display: inline-block;
+      margin: 0.5rem;
+  }
+  
+}
+
+}
+.gallery-tittle{
+  padding-top: 0.8rem;
+}
+
+/* ............................ footer 1.................  */
+
+a {
+  text-decoration: none;
+  color: var(--heading-color);
+}
+li {
+  list-style-type: none;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.media-icon{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-right: 9rem;
+
+  >a{
+    padding: 0.5rem;
+    font-size: 22px;
+  }
+}
+
+.footer-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 12rem;
+}
+
+.footer-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 12rem;
+  color: #6e6d7a;
+}
